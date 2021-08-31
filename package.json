@@ -1,7 +1,7 @@
 {
   "name": "game1010",
   "version": "0.1.0",
-  "homepage": "http://peterbak6.github.io/game1010/",
+  "homepage": "http://peterbak6.github.io/my1010/",
   "private": true,
   "dependencies": {
     "@fontsource/roboto": "^4.5.0",

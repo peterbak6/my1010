@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="746f6972-8dbc-4ef9-952e-c4f1d95c9ea2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/build/asset-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/asset-manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/static/css/main.8c8b27cf.chunk.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/static/css/main.8c8b27cf.chunk.css.map" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/static/js/2.f9b60f86.chunk.js" beforeDir="false" />
@@ -24,7 +23,6 @@
       <change beforePath="$PROJECT_DIR$/node_modules/.bin/sshpk-sign" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/node_modules/.bin/sshpk-verify" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/node_modules/.bin/uuid" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/uuid" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node_modules/@babel/code-frame/lib/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/code-frame/lib/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node_modules/@babel/code-frame/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/code-frame/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node_modules/@babel/compat-data/corejs2-built-ins.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/compat-data/corejs2-built-ins.js" afterDir="false" />
@@ -13287,7 +13285,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1630242024786</updated>
-      <workItem from="1630242029654" duration="10122000" />
+      <workItem from="1630242029654" duration="10594000" />
     </task>
     <task id="LOCAL-00001" summary="icons">
       <created>1630245721440</created>
