@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="746f6972-8dbc-4ef9-952e-c4f1d95c9ea2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/.eslintcache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/style.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/style.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/widgets/Board.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/widgets/Board.js" afterDir="false" />
-    </list>
+    <list default="true" id="746f6972-8dbc-4ef9-952e-c4f1d95c9ea2" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -52,7 +45,7 @@
       <option name="presentableId" value="Default" />
       <updated>1630242024786</updated>
       <workItem from="1630242029654" duration="11032000" />
-      <workItem from="1630418530294" duration="2151000" />
+      <workItem from="1630418530294" duration="2442000" />
     </task>
     <task id="LOCAL-00001" summary="icons">
       <created>1630245721440</created>
