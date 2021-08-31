@@ -7,8 +7,11 @@ import { generateStones } from './Stones'
 
 const draw = (div, config, handleGameChange) => {
     
-    let s = config.size, p=config.padding, width = config.grid * (s + p), height = width;
-    let col = d3.scaleOrdinal().range(config.colors);
+    let s = config.size,
+        p=config.padding,
+        width = config.grid * (s + p),
+        height = (config.grid + 5) * (s + p),
+        col = d3.scaleOrdinal().range(config.colors);
 
     const board = d3.range(config.grid).map((r) => 
         d3.range(config.grid).map((c) => 
@@ -106,10 +109,10 @@ const draw = (div, config, handleGameChange) => {
         let pieces = []
         let stoneWidth = d3.max(stn.map(s => s[0]));
         let stoneHeight = d3.max(stn.map(s => s[1]));
-        let stonePosY = height + s * 1
+        let stonePosY = height - 4 * (s+p)
         let stonePosX = drawnPiecePos * (s + p);
         if (stonePosX > width - (stoneWidth+1) * (s + p)){
-            stonePosY = height + s * 3
+            // stonePosY = height - 2 * (s+p)
             stonePosX = width - (stoneWidth+1) * (s + p)
         }
         let gPieces = svg.append("g")
@@ -125,6 +128,7 @@ const draw = (div, config, handleGameChange) => {
                 .style("fill", col(color))
                 .style("fill-opacity", 0.75)
                 .style("stroke", "#000")
+                .style("stroke-width", 1)
                 .attr("pointer-events", "none")
                 .attr("transform","translate("+(stonePosX + 2)+","+(stonePosY)+")")
                 // .call(drag);
@@ -179,7 +183,7 @@ const draw = (div, config, handleGameChange) => {
         if (movingStone===null){return;}
         let stn = drawnStones[movingStone]
         let stnCode = stoneCodes[movingStone]
-        let pos = snapToGrid(event.x, event.y);
+        let pos = snapToGrid(event.x, event.y - (s * 2));
         moveStone(pos.x, pos.y, stn)
         let check  = checkPositionFree(pos, stnCode);
         stn.forEach(m => {
@@ -191,12 +195,13 @@ const draw = (div, config, handleGameChange) => {
         if (movingStone===null){return;}
         let stn = drawnStones[movingStone]
         let stnCode = stoneCodes[movingStone]
-        let pos = snapToGrid(event.x, event.y);
+        let pos = snapToGrid(event.x, event.y - (s * 2));
         let check  = checkPositionFree(pos, stnCode);
 
         if (check===true){
             setPosition(pos, false, stnCode, stn)
             d3.select(this).remove();
+            stn.forEach(s => s.style("stroke-width", 0))
             handleGameChange('points', stnCode.length);
             currentStoneNrs.splice(currentStoneNrs.indexOf(movingStone), 1);
             let points = checkRowColFull();
@@ -219,8 +224,8 @@ const draw = (div, config, handleGameChange) => {
     d3.select(div).selectAll('*').remove();
 
     const svg = d3.select(div).append("svg")
-        .attr("width", width + p * 2)
-        .attr("height", (height + p) * 2)
+        .attr("width", width)
+        .attr("height", height)
         .append("g")
         .attr("transform","translate("+p+","+p+")");
 

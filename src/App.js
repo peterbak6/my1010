@@ -53,8 +53,14 @@ function App() {
     grid: 10,
     padding: 2,
     stones: 3,
-    colors: ["#8dd3c7","#ffffb3","#bebada","#fb8072","#80b1d3","#fdb462","#b3de69","#fccde5","#d9d9d9","#bc80bd","#ccebc5","#ffed6f"],
-    colors1: ["#66c2a5","#fc8d62","#8da0cb","#e78ac3","#a6d854","#ffd92f","#e5c494","#b3b3b3"]
+    colors: ["#4baf90",
+      "#a664c4",
+      "#73b34a",
+      "#c95682",
+      "#787c37",
+      "#6587cd",
+      "#ce9b44",
+      "#c95b41"]
   }
 
   return (
