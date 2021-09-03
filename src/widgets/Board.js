@@ -6,9 +6,8 @@ import * as d3 from 'd3';
 import { generateStones } from './Stones'
 
 const draw = (div, config, handleGameChange) => {
-    
-    let s = config.size,
-        p=config.padding,
+    let p=config.padding,
+        s = Math.floor(div.getBoundingClientRect().width / config.grid - p * 2) || config.size,
         width = config.grid * (s + p),
         height = (config.grid + 5) * (s + p),
         col = d3.scaleOrdinal().range(config.colors);

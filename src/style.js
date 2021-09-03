@@ -8,7 +8,8 @@ const useStyles = makeStyles((theme) => ({
   },
   header: {
     display:'flex',
-    flexDirection: 'row', 
+    overflow:'hidden',
+    flexDirection: 'row',
     justifyContent: 'space-evenly',
     alignItems: "center",
     textAlign:'center',
@@ -19,29 +20,36 @@ const useStyles = makeStyles((theme) => ({
   },
   points: {
     display:'flex',
+    overflow:'hidden',
     flexDirection: 'row',
     justifyContent: 'space-evenly',
     alignItems: "center",
     textAlign:'center',
     fontFamily: 'fantasy',
     color: '#444',
-    backgroundColor: ''
+    backgroundColor: 'white'
   },
   h2:{
     margin:'0 1px',
-    fontSize:'1.7em',
+    fontSize:'1.1em',
+    color:'#444'
+  },
+  h3:{
+    margin:'0 1px',
+    fontSize:'1.0em',
     color:'#444'
   },
   board:{
     display:'flex',
+    overflow:'hidden',
     width:'100%',
-    height: '100vh',
+    height: 'auto',
     flexDirection: 'column',
     // justifyContent: 'center', 
     alignItems: "center",
     textAlign:'center',
     padding: '0.2em',
-    backgroundColor: '#f2f2f2'
+    backgroundColor: '#ffffff'
   },
   refresh: {
     padding: '0 0 0 13px',
