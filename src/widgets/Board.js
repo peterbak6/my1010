@@ -29,9 +29,11 @@ const draw = (div, config, handleGameChange) => {
         movingStone = 0;
 
     const removeCell = (cell) => {
-        cell.stone.transition().duration(500)
-            .attr("x",s / 2).attr("y", s / 2)
-            .attr("height", 0).attr("width",0).remove();
+        if (!!cell.stone){
+            cell.stone.transition().duration(500)
+                .attr("x",s / 2).attr("y", s / 2)
+                .attr("height", 0).attr("width",0).remove();
+        }
         cell['stone'] = null;
         cell.free = true;
     }
@@ -84,6 +86,8 @@ const draw = (div, config, handleGameChange) => {
             if (pos.c===null || pos.r===null){
                 flag = false
             } else if (t[0]+pos.c >= config.grid || t[0]+pos.c < 0 || t[1]+pos.r >= config.grid || t[1]+pos.r < 0){
+                flag = false
+            } else if (t[1]+pos.r >= config.grid || t[0]+pos.c >= config.grid) {
                 flag = false
             } else if (board[t[1]+pos.r][t[0]+pos.c].free===false){
                 flag = false;
@@ -198,6 +202,7 @@ const draw = (div, config, handleGameChange) => {
         let check  = checkPositionFree(pos, stnCode);
 
         if (check===true){
+            moveStone(pos.x, pos.y, stn);
             setPosition(pos, false, stnCode, stn)
             d3.select(this).remove();
             stn.forEach(s => s.style("stroke-width", 0))
